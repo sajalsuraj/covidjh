@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CovInfo Ranchi</string>
+    <string name="title_activity_main">CovInfo Ranchi</string>
+    <string name="package_name">com.covinfo.ranchi</string>
+    <string name="custom_url_scheme">com.covinfo.ranchi</string>
+</resources>

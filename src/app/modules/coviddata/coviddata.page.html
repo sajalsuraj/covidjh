@@ -1,0 +1,56 @@
+<app-header [folder]="folder"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-updatebox *ngIf="commonService.isAppUpdated"></app-updatebox>
+  <div id="container">
+    <h5>
+      <span>Ranchi's</span> Covid Cases Status
+    </h5>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card class="card-1">
+            <ion-card-header>
+              <ion-card-title>Total Confirmed</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>
+                {{totalConfirmed}}
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-2">
+            <ion-card-header>
+              <ion-card-title>Total Recovered</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{totalRecovered}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-3">
+            <ion-card-header>
+              <ion-card-title>Total Deaths</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{totalDeaths}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

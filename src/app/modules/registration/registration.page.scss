@@ -1,0 +1,70 @@
+@import '/src/assets/css/variables';
+ion-menu-button {
+  color: $primary;
+}
+ion-title.top-title{
+  font-family: $Lexend-Medium;
+  color: $primary;
+}
+#container{
+  padding: 5px;
+  >h6{
+    text-align:center;
+    span{
+      font-family: $Lexend-Medium;
+      color: $primary;
+    }
+    span.blue{
+      color: #2193b0;
+      font-family: $Lexend-Bold;
+    }
+  }
+  ion-grid.top-grid{
+    >ion-row{
+      ion-col.nav-icon{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+      }
+      > ion-col{
+        padding:0px;
+        ion-col{
+          font-size:14px;
+        }
+      }
+    }
+  }
+
+  div.list-row{
+    padding: 0px 27px;
+    box-shadow: 0px 1px 5px 4px #eee;
+    h6{
+      font-family: $Lexend-Bold;
+      color: $secondary;
+      font-size: 14px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    div:first-of-type{
+      font-size: 9px;
+      border-radius: 5px;
+      color: $white;
+      padding: 3px;
+      text-align: center;
+      font-family: $Lexend-Bold;
+    }
+    div:last-of-type{
+      font-size: 10px;
+      text-align: center;
+    }
+    div.red{
+      background: red;
+    }
+    div.green{
+      background: $primary;
+    }
+    div.blue{
+      background: #2193b0;
+    }
+  }
+}

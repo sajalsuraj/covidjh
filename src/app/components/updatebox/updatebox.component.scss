@@ -1,0 +1,13 @@
+@import '/src/assets/css/variables';
+p.update-box{
+    margin: 0px;
+    text-align: center;
+    background: $secondary;
+    padding: 4px;
+    
+    a{
+        color: $white;
+        font-size:12px;
+        font-family: $Lexend-Bold;
+    }
+}

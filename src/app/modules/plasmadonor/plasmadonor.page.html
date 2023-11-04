@@ -1,0 +1,20 @@
+<app-header [folder]="folder"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-updatebox *ngIf="commonService.isAppUpdated"></app-updatebox>
+  <div id="container">
+    <ion-list>
+      <ion-item *ngFor="let helper of helperList">
+        <ion-label>{{helper.name}}</ion-label>
+        <div>
+          <p>{{helper.phone}} <ion-icon (click)="callNum(helper.phone)" name="call"></ion-icon></p>
+        </div>
+        
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

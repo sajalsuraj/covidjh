@@ -1,0 +1,18 @@
+@import '/src/assets/css/variables';
+ion-menu-button {
+    color: $primary;
+}
+ion-title.top-title{
+    font-family: $Lexend-Medium;
+    color: $primary;
+}
+
+#container{
+    ion-list{
+        ion-item{
+            ion-icon{
+                color:$primary;
+            }
+        }
+    }
+}

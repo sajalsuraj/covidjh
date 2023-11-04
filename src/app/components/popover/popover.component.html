@@ -1,0 +1,14 @@
+<div class="center-data-holder">
+  <h5>Vaccination Center Details</h5>
+  <p>Name - {{centerData?.name}}, {{centerData?.pincode}}</p>
+
+  <div>
+    <h5>Available Slots -</h5>
+    <div class="slots" *ngFor="let session of centerData?.sessions; let i = index">
+      <p>{{i + 1}}. Date - <span>{{session.date}}</span></p>
+      <p>Available Capacity - <span>{{session.available_capacity}} <span class="red">{{session.available_capacity < 1 ? "(Booked)" : ""}}</span></span></p>
+      <p>Vaccine - <span>{{session.vaccine}}</span></p>
+      <p>Age allowed - <span>{{session.min_age_limit}}+</span></p>
+    </div>
+  </div>
+</div>

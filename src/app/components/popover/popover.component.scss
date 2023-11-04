@@ -1,0 +1,39 @@
+@import '/src/assets/css/variables';
+div.center-data-holder{
+    padding: 10px;
+    > h5{
+        font-family: $Lexend-Medium;
+        color: $primary;
+        font-size: 14px;
+        text-align:center;
+        text-decoration: underline;
+    }
+    > p{
+        font-family: $Lexend-Bold;
+        color: $secondary;
+        font-size: 12px;
+    }
+
+    > div{
+        > h5{
+            font-family: $Lexend-Bold;
+            color: $secondary;
+            font-size: 12px;
+        }
+        div.slots{
+            border-bottom: 1px solid #aaa;
+            > p{
+                font-family: $Lexend-Medium;
+                color: $primary;
+                font-size : 12px;
+                > span{
+                    font-family: $Lexend-Bold;
+                }
+                span.red{
+                    color: red;
+                    font-family: $Lexend-Bold;
+                }
+            }
+        }
+    }
+}

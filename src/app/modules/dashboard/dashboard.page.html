@@ -1,0 +1,92 @@
+<app-header [folder]="folder"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-updatebox *ngIf="commonService.isAppUpdated"></app-updatebox>
+  <div id="container">
+    <h6><strong class="capitalize">Hello!</strong> hope you are safe :)</h6>
+    <h5>
+      <span>Ranchi's</span> Vaccination Dose Status
+    </h5>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card class="card-1">
+            <ion-card-header>
+              <ion-card-title>Vaccinated Today</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>
+                {{todayCount}}
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-2">
+            <ion-card-header>
+              <ion-card-title>Total Doses Given</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{totalCount}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-3">
+            <ion-card-header>
+              <ion-card-title>Dose 1</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{totalDose1}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-4">
+            <ion-card-header>
+              <ion-card-title>Dose 2</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{totalDose2}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-5">
+            <ion-card-header>
+              <ion-card-title>Covishield</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{coviShield}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="card-6">
+            <ion-card-header>
+              <ion-card-title>Covaxin</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <p>{{covaxin}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

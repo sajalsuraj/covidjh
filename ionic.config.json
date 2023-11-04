@@ -1,0 +1,7 @@
+{
+  "name": "CovInfo Ranchi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

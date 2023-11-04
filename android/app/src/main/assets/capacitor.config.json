@@ -1,0 +1,14 @@
+{
+  "appId": "com.covinfo.ranchi",
+  "appName": "CovInfo Ranchi",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "linuxAndroidStudioPath": "/usr/local/android-studio/android-studio/bin/studio.sh",
+  "cordova": {}
+}

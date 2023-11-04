@@ -1,0 +1,16 @@
+<app-header [folder]="folder"></app-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-updatebox *ngIf="commonService.isAppUpdated"></app-updatebox>
+  <div id="container">
+    <p>CovInfo by Ranchi blog is a non-profitable android app just to help people in this pandemic. This app is using real time data from CoWin India. 
+      This application provides you with all required details about the covid-19 vaccination, which will also keep on updating from time to time. We will not be responsible for the actions you take using the information on this app. We are just mediating information. This app doesn't access or use your personal data.</p>
+    <p>Data Sources - CoWin, covid19india.org</p>
+  </div>
+</ion-content>
